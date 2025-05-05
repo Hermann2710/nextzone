@@ -1,6 +1,7 @@
 import { z } from "zod"
 import { formatNumberWithDecimal } from "./utils"
 
+// Common
 const Price = (field: string) =>
   z.coerce
     .number()

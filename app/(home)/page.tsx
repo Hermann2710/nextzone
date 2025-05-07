@@ -9,6 +9,7 @@ import { toSlug } from "@/lib/utils"
 import { HomeCard } from "@/components/shared/home/home-card"
 import { Card, CardContent } from "@/components/ui/card"
 import ProductSlider from "@/components/shared/product/product-slider"
+import BrowsingHistoryList from "@/components/shared/browsing-history-list"
 
 export default async function Home() {
   const categories = (await getAllCategories()).slice(0, 4)
@@ -78,6 +79,9 @@ export default async function Home() {
             />
           </CardContent>
         </Card>
+      </div>
+      <div className='p-4 bg-background'>
+        <BrowsingHistoryList />
       </div>
     </>
   )

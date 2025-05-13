@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Overview
 
-[NextZone](https://nextzone-4gbs-diixph1uo-hermann2710s-projects.vercel.app)
+[NextZone](https://nextzone-99ljn87l7-hermann2710s-projects.vercel.app)

@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { APP_DESCRIPTION, APP_NAME, APP_SLOGAN } from "@/lib/constants"
 import { Toaster } from "sonner"
+import ClientProviders from "@/components/shared/client-providers"
 
 export const metadata: Metadata = {
   title: {
@@ -19,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang='fr'>
       <body suppressHydrationWarning className={`antialiased`}>
-        {children}
-        <Toaster />
+        <ClientProviders>
+          {children}
+          <Toaster />
+        </ClientProviders>
       </body>
     </html>
   )

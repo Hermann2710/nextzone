@@ -6,13 +6,7 @@ import { Button, buttonVariants } from "../ui/button"
 import { Separator } from "../ui/separator"
 import { ScrollArea } from "../ui/scroll-area"
 import Image from "next/image"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "../ui/select"
+import { Select, SelectContent, SelectItem, SelectTrigger } from "../ui/select"
 import { TrashIcon } from "lucide-react"
 import ProductPrice from "./product/product-price"
 import { FREE_SHIPPING_MIN_PRICE } from "@/lib/constants"

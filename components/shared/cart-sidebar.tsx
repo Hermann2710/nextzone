@@ -72,10 +72,12 @@ export default function CartSidebar() {
                   <div className='flex gap-2 mt-2'>
                     <Select
                       value={item.quantity.toString()}
-                      onValueChange={(value) => updateItem(item, Number(value))}
+                      onValueChange={(value) => {
+                        updateItem(item, Number(value))
+                      }}
                     >
                       <SelectTrigger className='text-xs w-12 ml-1 h-auto py-0'>
-                        <SelectValue />
+                        {item.quantity}
                       </SelectTrigger>
                       <SelectContent>
                         {Array.from({ length: item.countInStock }).map(
